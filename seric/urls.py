@@ -15,7 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls import include
+from sericauth import views
 
 urlpatterns = [
+    path('', views.test),
+    # path(r'^/',views.index,name='index'),
+    path('', include('sericauth.urls')),
     path('admin/', admin.site.urls),
 ]
