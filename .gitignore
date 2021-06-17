@@ -1,5 +1,6 @@
 idea/**
-venv/**
+venv/**:qa
+q:qa
 **.pyc
 usercontent/__pycache__/**
 
